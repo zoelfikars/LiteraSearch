@@ -23,7 +23,7 @@ class PasswordEditText : AppCompatEditText {
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Masukkan Password Anda"
+        hint = "Masukkan Password anda"
 
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }

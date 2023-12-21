@@ -1,6 +1,7 @@
 package dicoding.zulfikar.literasearchapp.view.custom
 
 import android.content.Context
+import android.graphics.Canvas
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.AttributeSet
@@ -24,7 +25,12 @@ class NamaEditText : AppCompatEditText, View.OnTouchListener {
     ) {
         init()
     }
+    override fun onDraw(canvas: Canvas) {
+        super.onDraw(canvas)
+        hint = "Masukkan Nama anda"
 
+        textAlignment = View.TEXT_ALIGNMENT_VIEW_START
+    }
     private fun init() {
         addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
