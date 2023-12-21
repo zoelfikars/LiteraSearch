@@ -1,3 +1,5 @@
+package dicoding.zulfikar.literasearchapp.view.custom
+
 import android.content.Context
 import android.text.Editable
 import android.text.TextWatcher

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainActivity">
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="dicoding.zulfikar.literasearchapp.view.welcome.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/bookActivity"
+        android:name="dicoding.zulfikar.literasearchapp.view.book.BookActivity"
+        android:label="activity_book"
+        tools:layout="@layout/activity_book" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="dicoding.zulfikar.literasearchapp.view.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="dicoding.zulfikar.literasearchapp.view.forgotpassword.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+</navigation>
